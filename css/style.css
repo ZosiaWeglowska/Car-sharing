@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1088px;
+}
+
+:root {
+    --font-size-big: 35px;
+    --font-size-medium: 25px;
+    --font-size-small: 16px;
+    --font-size-smaller: 14px;
+    --color-detailes: #FF0000;
+    --color-text-darker: #6A6A6A;
+    --color-text-light: #B2B2B2;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header * {
+    z-index: 1;
+}
+
+.banner-content * {
+    z-index: 1;
+}
+
+.page-header {
+    height: 90px;
+    background-color: #00000066;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-logo {
+    font-size: var(--font-size-big);
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.page-logo p {
+    color: #FFFFFF
+}
+
+.page-logo span {
+    color: #FF0000;
+}
+
+.page-nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.page-nav-list a {
+    font-size: var(--font-size-small);
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 30px;
+    display: inline-block;
+    height: 90px;
+    line-height: 90px;
+}
+
+
+.page-nav-list a:hover {
+    background: #FFFFFF33 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.banner {
+    background-image: url("../images/Image@2x.png");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 27px);
+    position: relative;
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+.banner-title {
+    font: normal normal 900 90px/90px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #00000040;
+    opacity: 1;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font: normal normal bold 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.banner__links {
+    margin-top: 54px;
+    text-transform: uppercase;
+}
+
+.banner-link1 {
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border-radius: 40px;
+    opacity: 1;
+    padding: 22px 55px 22px 55px;
+    margin-right: 25px;
+}
+
+.banner-link2 {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    color: #ff0000;
+    border-radius: 40px;
+    opacity: 1;
+    padding: 22px 55px 22px 55px;
+}
+
+.banner:after {
+    content: "";
+    background-image: url("../images/Icon Arrow Down.svg");
+    background-repeat: no-repeat;
+    background-color: #FF0000;
+    background-position: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: inline-block;
+    bottom: -27px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.blog-header {
+    font-size: var(--font-size-big);
+    text-transform: uppercase;
+    color: black;
+}
+
+/* Nie działa! */
+.blog-header:before,
+.blog-header:after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #FF0000;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.blog-articles {
+    display: flex;
+}
+
+.article-title {
+    font-family: ;
+}
